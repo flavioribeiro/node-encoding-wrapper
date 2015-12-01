@@ -22,7 +22,19 @@ $ chmod a+x runtests.sh && ./runtests.sh
 
 ## Example
 ```js
-missing example
+var EncodingApi = require('src/lib');
+var Utils = require('src/utils');
+
+var api = new EncodingApi(encodingLogin, encodingPassword);
+var hlsProfile = Utils.getProfileFromFile('profiles/hls.json', 'ftp://usr:passwd@flv.io/hls_output/');
+
+api.addMedia('http://flv.io/video.mp4', hlsProfile, function(res) {
+  if (res.errors) {
+    throw new Error(res.errors.error);
+  } else {
+    console.log("done");
+  }
+});
 ```
 
 ## Contributing
