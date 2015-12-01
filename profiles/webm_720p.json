@@ -1,0 +1,24 @@
+{
+  "output" : "webm",
+  "size" : "0x720",
+  "bitrate" : "2500k",
+  "audio_bitrate" : "128k",
+  "audio_sample_rate" : "48000",
+  "audio_channels_number" : "2",
+  "framerate" : "30",
+  "keep_aspect_ratio" : "yes",
+  "video_codec" : "libvpx",
+  "profile" : "main",
+  "audio_codec" : "libvorbis",
+  "two_pass" : "yes",
+  "turbo" : "no",
+  "twin_turbo" : "no",
+  "cbr" : "no",
+  "deinterlacing" : "auto",
+  "keyframe" : "90",
+  "audio_volume" : "100",
+  "rotate" : "def",
+  "strip_chapters" : "no",
+  "hint" : "no"
+}
+
