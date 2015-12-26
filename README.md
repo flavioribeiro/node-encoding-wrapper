@@ -26,6 +26,7 @@ var EncodingApi = require('src/lib');
 var Utils = require('src/utils');
 
 var api = new EncodingApi(encodingLogin, encodingPassword);
+// getProfileFromFile() receives the destination of output as second parameter
 var hlsProfile = Utils.getProfileFromFile('profiles/hls.json', 'ftp://usr:passwd@flv.io/hls_output/');
 
 api.addMedia('http://flv.io/video.mp4', hlsProfile, function(res) {
